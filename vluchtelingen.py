@@ -393,3 +393,5 @@ def vraag22():
         vraag22()
 
 vraag1()
+
+time.sleep(3)
