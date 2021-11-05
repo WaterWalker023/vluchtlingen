@@ -4,22 +4,18 @@ print()
 
 def vraag1():
 
-    print("\nIs er onrust in jou land? \n \nA: ja: grote onrust \nB: ja: het rommelt een beetje \nC: nee \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("\nIs er onrust in jou land? \n \nA: ja: grote onrust \nB: nee \n")
+    antwoord1 = input("kies A of B==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
         print("")
         vraag2()
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("")
-        vraag2()
-
-    elif antwoord1 == "C" or antwoord1 == "c":
         print("Wat fijn voor je, je bent veilig")
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag1()
 
 def vraag2():
@@ -38,7 +34,7 @@ def vraag2():
         vraag2()
 
 def vraag3():  
-    print("ben je alleen of ben je met meerdere personen \n \nA: ik ben alleen \nB: samen met mijn ouders \nC: met mijn gezin \n")
+    print("ben je alleen of ben je met meerdere personen \n \nA: ik ben alleen \nB: samen met mijn moeder \n")
     antwoord1 = input("kies A B of C ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
@@ -49,28 +45,23 @@ def vraag3():
         print("je sleurt je ouders mee")
         vraag12()
 
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("")
-
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag3()
 
 def vraag4():  
-    print("ben je mobiel \n \nA: ja ik heb een auto \nB: ja ik heb een rugzak \nC: nee \n")
+    print("ben je mobiel \n \nA: ja ik heb een auto\nB: nee \n")
     antwoord1 = input("kies A B of C ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
         print("je stopt de spullen in je auto en rijdt weg")
         vraag5()
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("")
+        print("je gaat gelijk weg rennen")
+        vraag19()
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag4()
 
 def vraag5():  
@@ -98,7 +89,7 @@ def vraag6():
 
     if antwoord1 == "A" or antwoord1 == "a":
         print("je geld is nu op maar je zit op de boot naar een eiland")
-        vraag7(" antwoord niet mogelijk in jouw situatie")
+        vraag7("antwoord niet mogelijk in jouw situatie")
 
     elif antwoord1 == "B" or antwoord1 == "b":
         print("via een achteringang heb je een bootje gekaapt en gaat naar een eiland")
@@ -130,7 +121,7 @@ def vraag7(geldop):
 
     else:
         print("\nkies A B of C")
-        vraag7()
+        vraag7(geldop)
 
 def vraag8():  
     print("wat is je volgende stap \n \nA: asiel vragen in Nederland \nB: in het vluchtelingenkamp blijven\nC: naar huis \n")
@@ -204,7 +195,7 @@ def vraag11():
         vraag11()
 
 def vraag12():  
-    print("zijn jullie mobiel \n \nA: ja we hebben een auto \nB: we hebben een ezel\nC: nee \n")
+    print("zijn jullie mobiel \n \nA: we hebben een auto \nB: we hebben een ezel\n")
     antwoord1 = input("kies A B of C ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
@@ -215,9 +206,6 @@ def vraag12():
         print("je loopt met je ezel naar het station")
         vraag15()
 
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
-
     else:
         print("\nkies A B of C")
         vraag12()
@@ -227,7 +215,7 @@ def vraag13():
     antwoord1 = input("kies A B of C ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("jullie kwamen veilig aan bij de haven")
+        print("je gaat naar de grenss")
         vraag14()
 
     elif antwoord1 == "B" or antwoord1 == "b":
@@ -281,124 +269,129 @@ def vraag15():
         vraag15()
 
 def vraag16():  
-    print(" \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("na dagen lopen word je moeder ziek wat wil je doen \n \nA: laat haar achter \nB: je moeder op de ezel doen \n")
+    antwoord1 = input("kies A of B ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("je vond water")
+        vraag18(0)
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        print("")
+        vraag17()
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag16()
 
 def vraag17():  
-    print("vraag17 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("de ezel is nu moe wat doe je nu\n \nA: laat je moeder achter en neem de ezel met water\nB: laat de ezel achter en draag je moeder \n")
+    antwoord1 = input("kies A of B==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("later vond je water en kwam er achter dat je je moeder voor niks had achtergelaten")
+        vraag18(0)
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        print("je vond net op tijd water en overleefde")
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag17()
 
-def vraag18():  
-    print("vraag18 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+def vraag18(snuf):  
+    print("wat wil je nu doen \n \nA: blijf bij het water allen \nB: ga veder in de woestijn\n")
+    antwoord1 = input("kies A of B ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("je hebt 3 maanden hier gebleefen tot twee aardige mensen je vonden en hiepen")
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
+        print("je verdroog in de woestijn")
 
     elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        if snuf == 0:
+            print("\nwaarom koos je C???\n")
+            vraag18(2)
+        elif snuf == 2:
+            print("\nwhy??????\n")
+            vraag18(3)
+        elif snuf == 3:
+            print("\nzo ga je niet winnen hoor\n")
+            vraag18(4)
+        elif snuf == 4:
+            print("\nwil je echt zo winnen?\n")
+            vraag18(5)
+        elif snuf == 5:
+            print("\noke jij wint zucht\n")
+            time.sleep(3)
+            print("ik ga mij zelf nu afsluiten")
+            time.sleep(3)
+            print("oke doei")
+            time.sleep(3)
+            exit() 
+            
 
     else:
-        print("\nkies A B of C")
-        vraag18()
+        print("\nkies A of B")
+        vraag18(snuf)
 
 def vraag19():  
-    print("vraag19 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("je bent aan gekomen in een dorp dicht bij wat wil je doen \n \nA: onderdak zoeken \nB: een auto stelen \n")
+    antwoord1 = input("kies A of B ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("je hebt een oude schuur gevonden")
+        vraag20()
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        print("je hebt een auto gestolen")
+        vraag5()
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag19()
 
 def vraag20():  
-    print("vraag20 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("de schuur lekt\n \nA: een andere plek vinden \nB: er niks aan doen\n")
+    antwoord1 = input("kies A of B==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("je werd gevonden en opgepakt")
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        print("je hebt wel oke geslapen ")
+        vraag21()
 
     else:
-        print("\nkies A B of C")
+        print("\nkies A of B")
         vraag20()
 
 def vraag21():  
-    print("vraag21 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
+    print("wat ga je nu doen \n \nA: alsnog een auto stelen \nB: naar een ander dorp\n")
+    antwoord1 = input("kies A of B ==> ")
 
     if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
+        print("je hebt alsnog een auto gestolen")
+        vraag5()
 
     elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
+        print("")
+        vraag19()
 
     else:
         print("\nkies A B of C")
         vraag21()
 
-def vraag22(): 
-    print("vraag22 \n \nA: antwoord \nB: antwoord \nC: antwoord \n")
-    antwoord1 = input("kies A B of C ==> ")
-
-    if antwoord1 == "A" or antwoord1 == "a":
-        print("A")
-
-    elif antwoord1 == "B" or antwoord1 == "b":
-        print("B")
-
-    elif antwoord1 == "C" or antwoord1 == "c":
-        print("C")
-
-    else:
-        print("\nkies A B of C")
-        vraag22()
-
 vraag1()
 
-time.sleep(3)
+while True:
+    print("\nwil je nog een keer spelen")
+    vraag0 = input("kies ja of nee ==> ")
+    if vraag0 == "ja":
+        vraag1()
+    elif vraag0 == "nee":
+        break
+    else:
+        print("\ndat is geen andwoord")
+
